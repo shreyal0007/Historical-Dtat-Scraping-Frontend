@@ -42,7 +42,7 @@ const LineChart = ({ period }) => {
   const fetchExchangeRateData = async (period) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/forex-data?from=USD&to=EUR&period=${period}`,
+        `https://historic-exchange-data-scraping-3.onrender.com/api/forex-data?from=USD&to=EUR&period=${period}`,
         {
           method: "POST",
         }
